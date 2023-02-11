@@ -66,7 +66,7 @@ function NavBar() {
             <Link className="nav-link" to="/contact">
               Contact
             </Link>
-            <Link className="nav-link" to="/faq ">
+            <Link className="nav-link" to="/faq">
               Faq
             </Link>
           </Nav>

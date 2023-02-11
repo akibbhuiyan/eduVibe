@@ -14,6 +14,7 @@ import ScrolledToTop from "./component/ScrolledToTop/ScrolledToTop";
 import Courses from "./component/Courses/Courses";
 import CourseDetails from "./component/CourseDetails/CourseDetails";
 import InstructorDeails from "./component/InstructorDeails/InstructorDeails";
+import Faq from "./component/Faq/Faq";
 const App = () => {
   AOS.init({
     offset: 150,
@@ -46,6 +47,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/courseDetails/:id" element={<CourseDetails />} />
+        <Route path="/faq" element={<Faq />} />
         <Route path="/author/:name" element={<InstructorDeails />} />
       </Routes>
       <ScrolledToTop />

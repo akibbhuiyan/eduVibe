@@ -395,7 +395,7 @@ export const Blogs = [
     thumb: "/images/Blog/post-01.jpg",
     author: "John Kite Hazel Thomas",
   },
-  { 
+  {
     id: 2,
     title: "Identity Design for a New Courses Crusader Work",
     category: "Education",
@@ -674,5 +674,201 @@ export const AboutComment = [
       "Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapib lorem ante.",
     star: 4.6,
     img: "/images/About/client-04.png",
+  },
+];
+
+export const Faques = [
+  {
+    id: 1,
+    header: "Am I eligible for admission?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Online Education",
+  },
+  {
+    id: 2,
+    header: "How to Change my Plan using PayPal?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Online Education",
+  },
+  {
+    id: 3,
+    header: "How long is my personal free trial?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Online Education",
+  },
+  {
+    id: 4,
+    header: "How long it take to create a video course?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Online Education",
+  },
+  {
+    id: 5,
+    header: "Is There Any One To One Support System?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Online Education",
+  },
+  {
+    id: 6,
+    header: "How do I redeem a coupon?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Online Education",
+  },
+  {
+    id: 7,
+    header: "Is There Any Prerequisites To Learn Python?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Online Education",
+  },
+  {
+    id: 8,
+    header: "What does it take become an author?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Online Education",
+  },
+  {
+    id: 9,
+    header: "Is There Any One To One Support System?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Payment Method",
+  },
+  {
+    id: 10,
+    header: "How do I get a refund?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Payment Method",
+  },
+  {
+    id: 11,
+    header: "Do You Provide Career Guideline?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Payment Method",
+  },
+  {
+    id: 12,
+    header: "How do I redeem a coupon?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Payment Method",
+  },
+  {
+    id: 13,
+    header: "How to Change my Plan using PayPal?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Payment Method",
+  },
+  {
+    id: 14,
+    header: "How do I get a refund?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Payment Method",
+  },
+  {
+    id: 15,
+    header: "Is There Any Prerequisites To Learn Python?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Payment Method",
+  },
+  {
+    id: 24,
+    header: "How to Change my Plan using PayPal?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Payment Method",
+  },
+  {
+    id: 16,
+    header: "Is There Any Prerequisites To Learn Python?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Pricing Plan",
+  },
+
+  {
+    id: 17,
+    header: "Do You Provide Career Guideline?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Pricing Plan",
+  },
+  {
+    id: 18,
+    header: "How do I redeem a coupon?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Pricing Plan",
+  },
+  {
+    id: 19,
+    header: "How long it take to create a video course?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Pricing Plan",
+  },
+  {
+    id: 20,
+    header: "How to Change my Plan using PayPal?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Pricing Plan",
+  },
+  {
+    id: 21,
+    header: "Am I eligible for admission?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Pricing Plan",
+  },
+  {
+    id: 22,
+    header: "How do I get a refund?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Pricing Plan",
+  },
+  {
+    id: 23,
+    header: "How long is my personal free trial?",
+    answer:
+      "Learning management system, combines a wide range of features to present a class setting without having the students come into a physical classroom. It all depends on the WordPress plugin you go with, but in general.",
+
+    category: "Pricing Plan",
   },
 ];

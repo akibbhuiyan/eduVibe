@@ -9,19 +9,18 @@ import AboutUsTeam from "./AboutUsTeam/AboutUsTeam";
 import AboutWrokShop from "./AboutWrokShop/AboutWrokShop";
 import ChooseUs from "./ChooseUs/ChooseUs";
 import HeroSection from "./HeroSection/HeroSection";
-import Footer from './../Home/Footer/Footer';
+import Footer from "./../Home/Footer/Footer";
 const About = () => {
   return (
     <div className="about">
-      <NavBar />
       <BreadCrumb title="About US" currentPage="About US" />
-      <HeroSection/>
-      <AboutService/>
-      <AboutWrokShop/>
-      <ChooseUs/>
-      <AboutUsTeam/>
-      <AboutTestimonials/>
-      <Footer/>
+      <HeroSection />
+      <AboutService />
+      <AboutWrokShop />
+      <ChooseUs />
+      <AboutUsTeam />
+      <AboutTestimonials />
+      <Footer />
     </div>
   );
 };

@@ -5,7 +5,6 @@ import NavBar from "./NavBar";
 const Header = () => {
   return (
     <div className="header">
-      <NavBar />
       <HeroSection />
     </div>
   );

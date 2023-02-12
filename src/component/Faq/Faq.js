@@ -7,7 +7,6 @@ import Footer from "../Home/Footer/Footer";
 const Faq = () => {
   return (
     <div>
-      <NavBar />
       <BreadCrumb title="Frequently Asked Questions" currentPage="FAQ" />
       <Questions />
       <Footer />

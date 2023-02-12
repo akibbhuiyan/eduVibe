@@ -11,7 +11,6 @@ const InstructorDeails = () => {
 
   return (
     <>
-      <NavBar />
       <BreadCrumb title="Instructor Profile" currentPage="Instructor Profile" />
       <InstructoProfile name={name} />
       <Footer />

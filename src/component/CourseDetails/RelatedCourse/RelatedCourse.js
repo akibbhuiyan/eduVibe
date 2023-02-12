@@ -8,7 +8,7 @@ import { useEffect } from "react";
 const RelatedCourse = () => {
   const [Courses, setCourses] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/coures")
+    fetch("https://edu-vibe-server-eight.vercel.app/coures")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);

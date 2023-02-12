@@ -67,7 +67,6 @@ const Login = () => {
 
   return (
     <>
-      <NavBar />
       <BreadCrumb title="Login & Register" currentPage="Login & Register" />
       <section className="login-register-area">
         <div className="row g-5">

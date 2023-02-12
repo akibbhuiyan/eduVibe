@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./App.css";
 import "./mediaQuery.css";
 import { Route, Routes } from "react-router-dom";
@@ -8,13 +8,14 @@ import Login from "./component/Home/Login/Login";
 import Home from "./component/Home/Home";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useState } from "react";
-import { useEffect } from "react";
 import ScrolledToTop from "./component/ScrolledToTop/ScrolledToTop";
 import Courses from "./component/Courses/Courses";
 import CourseDetails from "./component/CourseDetails/CourseDetails";
 import InstructorDeails from "./component/InstructorDeails/InstructorDeails";
 import Faq from "./component/Faq/Faq";
+import NavBar from "./component/Home/Header/NavBar";
+import Blogs from "./component/Blogs/Blogs";
+import Contact from "./component/Contact/Contact";
 const App = () => {
   AOS.init({
     offset: 150,
@@ -40,6 +41,7 @@ const App = () => {
         pauseOnHover
         theme="light"
       />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -48,6 +50,8 @@ const App = () => {
         <Route path="/courses" element={<Courses />} />
         <Route path="/courseDetails/:id" element={<CourseDetails />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/blog" element={<Blogs />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/author/:name" element={<InstructorDeails />} />
       </Routes>
       <ScrolledToTop />

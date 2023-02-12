@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import {
   AiOutlineArrowRight,
@@ -6,13 +6,17 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { Blogs } from "../../../FakeData";
+import { BlogsPost } from "../../../FakeData";
 import "./BlogHomeSection.css";
 import shap13 from "../../../assets/images/shape-04-02.png";
 import shap14 from "../../../assets/images/shape-15-02.png";
 import shap15 from "../../../assets/images/shape-13-03.png";
 import shap16 from "../../../assets/images/shape-17.png";
 const BlogHomeSection = () => {
+  const [blogs, setBlogs] = useState([]);
+
+  const topBlogs = BlogsPost.slice(0, 4);
+  console.log(topBlogs);
   return (
     <section className="edu-blog-section">
       <Container>
@@ -32,7 +36,7 @@ const BlogHomeSection = () => {
           </div>
         </div>
         <div className="row g-5 mt-3">
-          {Blogs.map((blog) => (
+          {blogs.map((blog) => (
             <div
               className="col-md-6 col-sm-12"
               key={blog.id}

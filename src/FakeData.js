@@ -386,7 +386,7 @@ export const featureClass = [
   },
 ];
 
-export const Blogs = [
+export const BlogsPost = [
   {
     id: 1,
     title: "Introduction to Javascript for the Beginners",
@@ -418,6 +418,70 @@ export const Blogs = [
     date: "15 Nov, 2022",
     thumb: "/images/Blog/post-04.jpg",
     author: "Hazel Thomas",
+  },
+  {
+    id: 5,
+    title: "Work Schedule For Each Studen At Eduvibe",
+    category: "Online Learning",
+    date: "15 Nov, 2022",
+    thumb: "/images/Blog/post-05.jpg",
+    author: "Dale Shutt",
+  },
+  {
+    id: 6,
+    title: "Monetize Your Coaching Site With Paid Courses",
+    category: "UI/UX Design",
+    date: "15 Nov, 2022",
+    thumb: "/images/Blog/post-06.jpg",
+    author: "Joyce Knight",
+  },
+  {
+    id: 7,
+    title: "Brave for Others And Brave for Yourself",
+    category: "Web Development",
+    date: "15 Nov, 2022",
+    thumb: "/images/Blog/post-07.jpg",
+    author: " Dale Shutt",
+  },
+  {
+    id: 8,
+    title: "An Excellent Foundation for Future Success",
+    category: "Education",
+    date: "15 Nov, 2022",
+    thumb: "/images/Blog/post-08.jpg",
+    author: "Hazel Thomas",
+  },
+  {
+    id: 9,
+    title: "Committed to Excellence in Teaching",
+    category: "UI/UX Design",
+    date: "15 Nov, 2022",
+    thumb: "/images/Blog/post-09.jpg",
+    author: "Joyce Knight",
+  },
+  {
+    id: 10,
+    title: "Changing Lives and Giving Choices For Everyone",
+    category: "Education",
+    date: "15 Nov, 2022",
+    thumb: "/images/Blog/post-10.jpg",
+    author: "Hazel Thomas",
+  },
+  {
+    id: 11,
+    title: "Good Things are Happening Creative Learning",
+    category: "Marketing",
+    date: "15 Nov, 2022",
+    thumb: "/images/Blog/post-11.jpg",
+    author: "Hazel Thomas",
+  },
+  {
+    id: 12,
+    title: "Creating a Community of Diverse Learners",
+    category: "Online Learning",
+    date: "15 Nov, 2022",
+    thumb: "/images/Blog/post-12.jpg",
+    author: "John Kite",
   },
 ];
 export const Service2 = [

@@ -14,6 +14,9 @@
   .navbar-toggler-icon {
     background-image: var(--menuImg) !important;
   }
+  .contact-left {
+    padding-right: 0;
+  }
 }
 @media only screen and (max-width: 767px) {
   .setisfied-learner {

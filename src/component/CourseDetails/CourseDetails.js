@@ -12,7 +12,7 @@ const CourseDetails = () => {
   const [courseDetails, setCourseDetails] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:5000/coures")
+    fetch("https://edu-vibe-server-eight.vercel.app/coures")
       .then((res) => res.json())
       .then((data) => {
         const details = data.find((course) => course.id === Number(id));

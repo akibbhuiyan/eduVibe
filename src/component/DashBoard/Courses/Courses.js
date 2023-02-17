@@ -10,14 +10,18 @@ const Courses = () => {
   const { user } = useContext(AuthContext);
   const [courses, setCourses] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/courses?email=${user?.email}`)
+    fetch(
+      `https://edu-vibe-server-eight.vercel.app/courses?email=${user?.email}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setCourses(data);
       });
   }, [user]);
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/deletecourse?courseId=${id}`)
+    fetch(
+      `https://edu-vibe-server-eight.vercel.app/deletecourse?courseId=${id}`
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.acknowledged) {

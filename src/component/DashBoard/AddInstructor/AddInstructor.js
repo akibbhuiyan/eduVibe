@@ -51,7 +51,7 @@ const AddInstructor = () => {
       .then((imgData) => {
         if (imgData) {
           data.profilePic = imgData.data?.url;
-          fetch("http://localhost:5000/addInstructor", {
+          fetch("https://edu-vibe-server-eight.vercel.app/addInstructor", {
             method: "POST",
             headers: {
               "content-type": "application/json",

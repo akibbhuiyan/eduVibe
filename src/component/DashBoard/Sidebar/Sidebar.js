@@ -9,7 +9,9 @@ const Sidebar = (props) => {
   const { logOut, user } = useContext(AuthContext);
   const [isAdmin, setIsAdmin] = useState(false);
   useEffect(() => {
-    fetch(`http://localhost:5000/isAdmin?email=${user?.email}`)
+    fetch(
+      `https://edu-vibe-server-eight.vercel.app/isAdmin?email=${user?.email}`
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.length !== 0) {

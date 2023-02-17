@@ -29,7 +29,7 @@ const EnrollForm = ({ modalIsOpen, closeModal, course }) => {
   const onSubmit = (data) => {
     data.date = format(new Date(), "PP");
     data.email = user?.email;
-    fetch("http://localhost:5000/entrollCourse", {
+    fetch("https://edu-vibe-server-eight.vercel.app/entrollCourse", {
       method: "POST",
       headers: {
         "content-type": "application/json",

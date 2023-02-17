@@ -16,6 +16,8 @@ import Faq from "./component/Faq/Faq";
 import NavBar from "./component/Home/Header/NavBar";
 import Blogs from "./component/Blogs/Blogs";
 import Contact from "./component/Contact/Contact";
+import Dashboard from "./component/DashBoard/Dashboard";
+import PrivateRoute from "./component/PrivateRoute/PrivateRoute";
 const App = () => {
   AOS.init({
     offset: 150,
@@ -26,6 +28,7 @@ const App = () => {
     mirror: false,
     anchorPlacement: "top-bottom",
   });
+  console.log(process.env);
 
   return (
     <>
@@ -52,6 +55,14 @@ const App = () => {
         <Route path="/faq" element={<Faq />} />
         <Route path="/blog" element={<Blogs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route
+          path="/dashboard"
+          element={
+            <PrivateRoute>
+              <Dashboard />
+            </PrivateRoute>
+          }
+        />
         <Route path="/author/:name" element={<InstructorDeails />} />
       </Routes>
       <ScrolledToTop />

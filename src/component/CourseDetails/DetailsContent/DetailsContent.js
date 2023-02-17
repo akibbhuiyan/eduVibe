@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Stars from "../../Home/Courses/Stars";
@@ -26,8 +26,21 @@ import {
 } from "react-icons/fa";
 import { ImUsers } from "react-icons/im";
 import "./DetailsContent.css";
-const DetailsContent = ({ details }) => {
-  console.log(details);
+import EnrollForm from "./EnrollForm";
+const DetailsContent = (props) => {
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+  const details = props.details;
+
+  const { author, duration } = props.details;
+
   return (
     <section className="edu-course-details">
       <Container>
@@ -43,10 +56,8 @@ const DetailsContent = ({ details }) => {
                 <div className="author-meta">
                   {" "}
                   <Link to="/">
-                    <img src={details.author.profilePic} alt="" />
-                    <span className="author-title">
-                      By {details.author.name}
-                    </span>
+                    <img src={author?.profilePic} alt="" />
+                    <span className="author-title">By {author?.name}</span>
                   </Link>
                 </div>
                 <Stars rating={details.rating} reviews={details.totalReviw} />
@@ -292,14 +303,12 @@ const DetailsContent = ({ details }) => {
                   <div className="course-tab-content">
                     <div className="course-author-wrapper">
                       <div className="thumbnail">
-                        <img src={details.author.profilePicBig} alt="" />
+                        <img src={author?.profilePicBig} alt="" />
                       </div>
                       <div className="author-content">
-                        <h6 className="title">{details.author.name}</h6>
-                        <span className="subtitle">
-                          {details.author.degination}
-                        </span>
-                        <p>{details.author.about}</p>
+                        <h6 className="title">{author?.name}</h6>
+                        <span className="subtitle">{author?.degination}</span>
+                        <p>{author?.about}</p>
                         <div className="team-share-info">
                           <a href="/about">
                             <FaLinkedinIn />
@@ -344,8 +353,7 @@ const DetailsContent = ({ details }) => {
                           <RiTimeLine /> Duration
                         </span>
                         <span>
-                          {details.duration.hour}h {details.duration.min}m{" "}
-                          {details.duration.sec}s
+                          {duration?.hour}h {duration?.min}m{duration?.sec}s
                         </span>
                       </li>
                       <li>
@@ -400,7 +408,7 @@ const DetailsContent = ({ details }) => {
                         <span>
                           <RiUser2Line /> Instructor
                         </span>
-                        <span>{details.author.name}</span>
+                        <span>{author?.name}</span>
                       </li>
                     </ul>
                     <div className="read-more-btn mt-5">
@@ -409,9 +417,17 @@ const DetailsContent = ({ details }) => {
                       </a>
                     </div>
                     <div className="main-btn  mt-3">
-                      <a href="#" className="edu-btn w-100 text-center">
+                      <button
+                        className="edu-btn w-100 text-center"
+                        onClick={openModal}
+                      >
                         Buy Now
-                      </a>
+                      </button>
+                      <EnrollForm
+                        modalIsOpen={modalIsOpen}
+                        closeModal={closeModal}
+                        course={details}
+                      />
                     </div>
                     <div className="eduvibe-post-share mt-3 text-center ">
                       <span>Share:</span>

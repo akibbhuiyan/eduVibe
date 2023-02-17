@@ -30,7 +30,8 @@
   padding-left: 20px;
   border-left: 2px solid var(--pre-tittle-clr);
 }
-.main-btn a {
+.main-btn a,
+.main-btn button {
   font-size: 18px;
   font-weight: 700;
   height: 60px;

@@ -42,7 +42,6 @@ const Login = () => {
       createUser(email, password)
         .then((result) => {
           const user = result.user;
-          console.log(user);
           updateName(name);
           setUser(user);
           toast("User Created!");

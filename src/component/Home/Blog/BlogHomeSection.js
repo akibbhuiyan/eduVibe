@@ -16,7 +16,6 @@ const BlogHomeSection = () => {
   const [blogs, setBlogs] = useState([]);
 
   const topBlogs = BlogsPost.slice(0, 4);
-  console.log(topBlogs);
   return (
     <section className="edu-blog-section">
       <Container>

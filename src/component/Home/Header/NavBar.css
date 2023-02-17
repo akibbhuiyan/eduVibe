@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 2;
   background-color: var(--bg-color);
   height: 80px;
   border-bottom: none;
@@ -118,4 +118,21 @@
   .header-menubar {
     margin-left: auto;
   }
+}
+.header-menubar #dropdown-basic {
+  background-color: var(--main-btn-clr);
+  border-radius: 5px;
+  padding: 1px 15px;
+  line-height: 47px;
+  margin-left: 15px;
+}
+.dropdown-toggle::after {
+  top: 50%;
+  right: 3px;
+  transform: translateY(-50%);
+}
+.dropdown-menu.show {
+  width: 18em;
+  height: 100vh;
+  padding: 1em 1em;
 }

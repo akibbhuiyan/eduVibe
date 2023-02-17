@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Dropdown from "react-bootstrap/Dropdown";
 import { FaSearch } from "react-icons/fa";
 import { RiUserLine, RiLogoutBoxLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -13,7 +14,7 @@ import { reload } from "firebase/auth";
 import { AuthContext } from "../../Context/UserContext";
 function NavBar() {
   const { user, logOut } = useContext(AuthContext);
-  const [isDarkMode, setIsDarkMode] = useState(() => false);
+  const [isDarkMode, setIsDarkMode] = useState(() => true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [active, setactive] = useState(false);
   useEffect(() => {
@@ -95,14 +96,29 @@ function NavBar() {
           </div>
           {user?.uid ? (
             <>
-              <div className="qoute-user qoute-icon d-none d-md-block">
-                <a href="#" onClick={logOut}>
-                  <RiLogoutBoxLine />
+              <Dropdown className=" d-none d-md-block">
+                <Dropdown.Toggle id="dropdown-basic">
                   {user.displayName}
-                </a>
-              </div>
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu variant="dark">
+                  <Link to="/profile" className="dropdown-item">
+                    Profile
+                  </Link>
+                  <Link to="/dashboard" className="dropdown-item">
+                    DashBoard
+                  </Link>
+                  <Link to="/setting" className="dropdown-item">
+                    Settings
+                  </Link>
+                  <Link to="/" className="dropdown-item" onClick={logOut}>
+                    <RiLogoutBoxLine /> LogOut
+                  </Link>
+                </Dropdown.Menu>
+              </Dropdown>
+
               <div className="qoute-user qoute-icon d-block d-md-none">
-                <Link to="/login">
+                <Link to="#" onClick={logOut}>
                   <RiLogoutBoxLine />
                 </Link>
               </div>

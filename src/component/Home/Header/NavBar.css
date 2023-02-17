@@ -132,7 +132,12 @@
   transform: translateY(-50%);
 }
 .dropdown-menu.show {
-  width: 18em;
   height: 100vh;
-  padding: 1em 1em;
+  padding: 1em;
+  width: 18em;
+  background-color: var(--bg-color);
+}
+.dash-nav {
+  height: calc(100vh - 80px) !important;
+  margin-top: 13px !important;
 }

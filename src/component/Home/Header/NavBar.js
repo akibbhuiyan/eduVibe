@@ -100,7 +100,7 @@ function NavBar() {
                   {user.displayName}
                 </Dropdown.Toggle>
 
-                <Dropdown.Menu variant="dark">
+                <Dropdown.Menu variant="dark" className="dash-nav">
                   <Link to="/profile" className="dropdown-item">
                     Profile
                   </Link>

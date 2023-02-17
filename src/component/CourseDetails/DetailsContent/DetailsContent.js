@@ -412,7 +412,7 @@ const DetailsContent = (props) => {
                       </li>
                     </ul>
                     <div className="read-more-btn mt-5">
-                      <a href="#" className="edu-btn bg-alt">
+                      <a href="/" className="edu-btn bg-alt">
                         Price: {details.price}.00
                       </a>
                     </div>

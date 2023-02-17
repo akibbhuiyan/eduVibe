@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import NavBar from "./../Home/Header/NavBar";
 import BreadCrumb from "./../Home/BreadCrumb/BreadCrumb";
 import InstructoProfile from "./InstructoProfile/InstructoProfile";
 import Footer from "./../Home/Footer/Footer";

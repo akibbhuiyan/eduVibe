@@ -4,7 +4,7 @@ import shape1 from "../../../assets/images/About/feature-icon-01.png";
 import shape2 from "../../../assets/images/About/feature-icon-02.png";
 import shape3 from "../../../assets/images/About/feature-icon-03.png";
 import { Service2 } from "../../../FakeData";
-import './AboutService.css'
+import "./AboutService.css";
 const AboutService = () => {
   return (
     <section className="eduvibe-aboutus-section">
@@ -26,7 +26,10 @@ const AboutService = () => {
               <div className="service-card-2 text-center">
                 <div className="inner">
                   <div className="icon">
-                   <a href=""> <img src={service.icon} alt="" /></a>
+                    <a href="/">
+                      {" "}
+                      <img src={service.icon} alt="" />
+                    </a>
                     <div className="shape-list">
                       <img src={shape1} alt="" className="shape shape-1" />
                       <img src={shape2} alt="" className="shape shape-2" />

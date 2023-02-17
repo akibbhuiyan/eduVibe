@@ -10,7 +10,6 @@ import DarkModeToggle from "react-dark-mode-toggle";
 import logo from "../../../assets/images/logo.png";
 import "./NavBar.css";
 import { useContext } from "react";
-import { reload } from "firebase/auth";
 import { AuthContext } from "../../Context/UserContext";
 function NavBar() {
   const { user, logOut } = useContext(AuthContext);

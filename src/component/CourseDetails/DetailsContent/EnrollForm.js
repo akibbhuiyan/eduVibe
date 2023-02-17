@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Modal from "react-modal";
 import { useForm } from "react-hook-form";
 import "./EnrollForm.css";
@@ -38,7 +38,6 @@ const EnrollForm = ({ modalIsOpen, closeModal, course }) => {
     })
       .then((res) => res.json())
       .then((succes) => {
-        console.log(succes);
         if (succes.acknowledged) {
           closeModal();
           toast("Appoinment Created SuccessFully");

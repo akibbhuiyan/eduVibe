@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 import { Faques } from "../../../FakeData";
 const Questions = () => {

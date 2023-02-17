@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { useContext } from "react";
-import { AuthContext } from "../Context/UserContext";
+
 import Sidebar from "./Sidebar/Sidebar";
 import "./Dashboard.css";
 import Courses from "./Courses/Courses";
 import Admin from "./Admin/Admin";
 import AddInstructor from "./AddInstructor/AddInstructor";
 const Dashboard = () => {
-  const { user } = useContext(AuthContext);
   const [userSelect, setUserSelect] = useState("dashcourses");
 
   return (

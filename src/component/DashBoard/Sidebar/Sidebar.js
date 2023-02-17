@@ -2,7 +2,6 @@ import React from "react";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Context/UserContext";
 import { RiLogoutBoxLine } from "react-icons/ri";
-import { Link } from "react-router-dom";
 import "./Sidebar.css";
 import { useEffect } from "react";
 const Sidebar = (props) => {
@@ -18,7 +17,6 @@ const Sidebar = (props) => {
         }
       });
   }, [user]);
-  console.log(isAdmin);
   return (
     <section className="sidebar-left p-0">
       <h4>Dashboard</h4>

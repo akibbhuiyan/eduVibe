@@ -28,7 +28,6 @@ const App = () => {
     mirror: false,
     anchorPlacement: "top-bottom",
   });
-  console.log(process.env);
 
   return (
     <>

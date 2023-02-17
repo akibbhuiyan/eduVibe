@@ -3,11 +3,10 @@ import "./Login.css";
 import { useForm } from "react-hook-form";
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import { AuthContext } from "../../Context/UserContext";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import PasswordChecklist from "react-password-checklist";
 import "react-toastify/dist/ReactToastify.css";
 import { useLocation, useNavigate } from "react-router-dom";
-import NavBar from "./../Header/NavBar";
 
 const Login = () => {
   const [newUser, setNewUser] = useState(false);

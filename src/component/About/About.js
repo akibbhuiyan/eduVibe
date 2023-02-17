@@ -1,7 +1,6 @@
 import React from "react";
 
 import BreadCrumb from "../Home/BreadCrumb/BreadCrumb";
-import NavBar from "../Home/Header/NavBar";
 import "./About.css";
 import AboutService from "./AboutService/AboutService";
 import AboutTestimonials from "./AboutTestimonials/AboutTestimonials";

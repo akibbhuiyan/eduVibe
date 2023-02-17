@@ -6,7 +6,6 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import Stars from "./../../Home/Courses/Stars";
 import "./CourseCard.css";
 import { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
 
 const CourseCard = (props) => {
   const { id, title, rating, category, mainthumbnail, lecture, price, author } =
@@ -16,7 +15,6 @@ const CourseCard = (props) => {
   const handleLove = () => {
     setClicekd(!clicked);
   };
-  const navigate = useNavigate();
 
   return (
     <div className={slick === "yes" ? "slick" : "col-lg-4 col-sm-6 col-12"}>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container } from "react-bootstrap";
 import {
   AiOutlineArrowRight,
@@ -13,8 +13,6 @@ import shap14 from "../../../assets/images/shape-15-02.png";
 import shap15 from "../../../assets/images/shape-13-03.png";
 import shap16 from "../../../assets/images/shape-17.png";
 const BlogHomeSection = () => {
-  const [blogs, setBlogs] = useState([]);
-
   const topBlogs = BlogsPost.slice(0, 4);
   return (
     <section className="edu-blog-section">
@@ -35,7 +33,7 @@ const BlogHomeSection = () => {
           </div>
         </div>
         <div className="row g-5 mt-3">
-          {blogs.map((blog) => (
+          {topBlogs.map((blog) => (
             <div
               className="col-md-6 col-sm-12"
               key={blog.id}

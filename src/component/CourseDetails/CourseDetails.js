@@ -2,10 +2,8 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { Courses } from "../../FakeData";
 import BreadCrumb from "../Home/BreadCrumb/BreadCrumb";
 import Footer from "../Home/Footer/Footer";
-import NavBar from "../Home/Header/NavBar";
 import DetailsContent from "./DetailsContent/DetailsContent";
 import RelatedCourse from "./RelatedCourse/RelatedCourse";
 

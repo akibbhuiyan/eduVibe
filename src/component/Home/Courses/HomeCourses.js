@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
-import { Courses } from "../../../FakeData";
 import CourseCard from "./CourseCard";
 import { AiOutlineArrowRight } from "react-icons/ai";
 

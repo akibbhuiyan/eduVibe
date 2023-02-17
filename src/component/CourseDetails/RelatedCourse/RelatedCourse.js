@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import { Container } from "react-bootstrap";
-import { Courses } from "../../../FakeData";
 import CourseCard from "../../Courses/CourseCard/CourseCard";
 import Slider from "react-slick";
 import { useState } from "react";

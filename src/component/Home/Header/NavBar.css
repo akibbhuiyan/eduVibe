@@ -64,10 +64,23 @@
   position: relative;
   z-index: 9;
 }
+.search-option .cart-num {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #ff9b1b;
+}
 .qoute-search {
   width: 50px;
   background-color: transparent;
   color: var(--text-clr);
+  font-size: 19px;
+}
+.qoute-icon svg {
+  color: #8c5408;
+  border: none;
 }
 .search-box {
   position: absolute;
@@ -84,9 +97,7 @@
   transition: 0.5s;
   outline: none;
 }
-.edu_header.scrolled .qoute-search.qoute-icon {
-  border: 1px solid var(--text-clr);
-}
+
 .qoute-user {
   background-color: var(--main-btn-clr);
 }

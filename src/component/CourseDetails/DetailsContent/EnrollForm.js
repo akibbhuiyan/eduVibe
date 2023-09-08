@@ -47,7 +47,7 @@ const EnrollForm = ({ modalIsOpen, closeModal, course }) => {
       });
   };
   return (
-    <div>
+    <>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -106,7 +106,7 @@ const EnrollForm = ({ modalIsOpen, closeModal, course }) => {
           </div>
         </form>
       </Modal>
-    </div>
+    </>
   );
 };
 

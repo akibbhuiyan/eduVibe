@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Dropdown from "react-bootstrap/Dropdown";
-import { FaSearch } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
 import { RiUserLine, RiLogoutBoxLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import DarkModeToggle from "react-dark-mode-toggle";
@@ -15,7 +15,6 @@ function NavBar() {
   const { user, logOut } = useContext(AuthContext);
   const [isDarkMode, setIsDarkMode] = useState(() => true);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [active, setactive] = useState(false);
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add("dark-theme");
@@ -80,18 +79,10 @@ function NavBar() {
             />
           </div>
           <div className="search-option">
-            {" "}
-            <button
-              className="qoute-search qoute-icon"
-              onClick={() => setactive(!active)}
-            >
-              <FaSearch />
-            </button>
-            {active && (
-              <div className="search-box">
-                <input type="text" name="search" placeholder="Search Here..." />
-              </div>
-            )}
+            <Link to="/cart" className="qoute-search qoute-icon">
+              <FiShoppingCart />
+            </Link>
+            <span className="cart-num">2</span>
           </div>
           {user?.uid ? (
             <>

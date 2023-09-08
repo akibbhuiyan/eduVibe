@@ -14,7 +14,9 @@ const CourseCard = (props) => {
     entrolled,
     lecture,
     price,
+    id,
   } = props.course;
+
   return (
     <div className="col-12 col-sm-12 col-md-6 col-xl-4 col-lg-4">
       <div className="edu-card card-type-2 radius-small " data-aos="fade-up">
@@ -65,8 +67,10 @@ const CourseCard = (props) => {
                 </div>
                 <div className="price old-price"></div>
               </div>
+              <div className="buyButton">
+                <Link to={`/courseDetails/${id}`}>Enroll</Link>
+              </div>
             </div>
-                
           </div>
         </div>
       </div>

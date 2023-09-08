@@ -106,6 +106,7 @@
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid var(--border-color);
+  justify-content: space-between;
 }
 .edu-card.card-type-2 .inner .content .card-bottom .price-list .current-price {
   border-radius: 3px;
@@ -119,6 +120,16 @@
   color: #fff;
 }
 .outline {
-	font-size: 19px;
-	margin-top: 3px;
+  font-size: 19px;
+  margin-top: 3px;
+}
+.buyButton a {
+  padding: 9px 38px;
+  background-color: var(--main-btn-clr);
+  color: #fff !important;
+  display: inline-block;
+  border-radius: 5px;
+  transition: 0.4s;
+  font-size: 16px;
+  font-weight: 600;
 }

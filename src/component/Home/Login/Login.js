@@ -124,12 +124,12 @@ const Login = () => {
                 {newUser ? (
                   <p>
                     Already Have an Account?
-                    <a onClick={() => setNewUser(!newUser)}>Log In</a>
+                    <span onClick={() => setNewUser(!newUser)}>Log In</span>
                   </p>
                 ) : (
                   <p>
                     New to EduVibe?
-                    <a onClick={() => setNewUser(!newUser)}>SignUp</a>
+                    <span onClick={() => setNewUser(!newUser)}>SignUp</span>
                   </p>
                 )}
                 {newUser && (

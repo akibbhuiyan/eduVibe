@@ -40,7 +40,9 @@ const DetailsContent = (props) => {
   const details = props.details;
 
   const { author, duration } = props.details;
-
+  const handleAddtocart = () => {
+    console.log(props.details);
+  };
   return (
     <section className="edu-course-details">
       <Container>
@@ -419,15 +421,10 @@ const DetailsContent = (props) => {
                     <div className="main-btn  mt-3">
                       <button
                         className="edu-btn w-100 text-center"
-                        onClick={openModal}
+                        onClick={handleAddtocart}
                       >
-                        Buy Now
+                        Add to cart
                       </button>
-                      <EnrollForm
-                        modalIsOpen={modalIsOpen}
-                        closeModal={closeModal}
-                        course={details}
-                      />
                     </div>
                     <div className="eduvibe-post-share mt-3 text-center ">
                       <span>Share:</span>

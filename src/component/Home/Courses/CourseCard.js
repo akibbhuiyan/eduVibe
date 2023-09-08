@@ -22,7 +22,7 @@ const CourseCard = (props) => {
       <div className="edu-card card-type-2 radius-small " data-aos="fade-up">
         <div className="inner">
           <div className="thumbnail">
-            <Link to="/courseDetails">
+            <Link to={`/courseDetails/${id}`}>
               <img src={mainthumbnail} alt="" className="w-100 radius-small" />
             </Link>
             <div className="eduvibe-status">
